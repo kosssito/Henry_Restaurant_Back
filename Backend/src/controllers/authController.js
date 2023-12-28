@@ -3,7 +3,7 @@ const { generateJWT } = require("../helpers/generate-jwt");
 const { jwtDecode } = require("../helpers/jwtDecode");
 const User = require("../models/user");
 const Admin = require("../models/admin");
-const URL_CLIENT = process.env.URL_CLIENT || "http://localhost:3000/";
+// const URL_CLIENT = process.env.URL_CLIENT || "http://localhost:3000/";
 
 const login = async (req, res) => {
 	const { email, password } = req.body;
